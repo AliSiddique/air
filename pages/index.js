@@ -88,22 +88,22 @@ export default function Home() {
         </div>
       </nav>
 <section id='news' class="bg-white dark:bg-gray-900">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <div class="mx-auto max-w-screen-md sm:text-center">
-          <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white animate-pulse">Sign up for our newsletter</h2>
-          <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.</p>
+  <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div className="mx-auto max-w-screen-md sm:text-center">
+          <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white animate-pulse">Sign up for our newsletter</h2>
+          <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.</p>
           <form action="#">
-              <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
-                  <div class="relative w-full">
-                      <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
-                      <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                          <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+              <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                  <div className="relative w-full">
+                      <label for="email" className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
+                      <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                          <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
                       </div>
                       <iframe src="https://alisiddique10.substack.com/embed"   frameborder="0" scrolling="no"></iframe>
                   </div>
               
               </div>
-              <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We care about the protection of your data. <a href="#" class="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read our Privacy Policy</a>.</div>
+              <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We care about the protection of your data. <a href="#" className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read our Privacy Policy</a>.</div>
           </form>
           <Image className='flex justify-center mx-auto w-50 h-50 rounded-md' width={700} height={300} src="/table.png"/>
 
@@ -116,38 +116,38 @@ export default function Home() {
 
 
 
-   <section class="bg-white dark:bg-gray-900">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-      <div class="max-w-screen-md mb-8 lg:mb-16">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Featured channels</h2>
-          <p class="text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+   <section className="bg-white dark:bg-gray-900">
+  <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <div className="max-w-screen-md mb-8 lg:mb-16">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Featured channels</h2>
+          <p className="text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
       </div>
-      <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+      <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
         <a href='https://www.youtube.com/c/Freecodecamp'>
           <div>
-              <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
               <img className="rounded-full" src="/bro.jpg"/>
               </div>
-              <h3 class="mb-2 text-xl font-bold dark:text-white">Bro Code</h3>
-              <p class="text-gray-500 dark:text-gray-400">A cool channel for coding tutorials from Java to Python all within 1 video! Join Bro and learn all about Computer science</p>
+              <h3 className="mb-2 text-xl font-bold dark:text-white">Bro Code</h3>
+              <p className="text-gray-500 dark:text-gray-400">A cool channel for coding tutorials from Java to Python all within 1 video! Join Bro and learn all about Computer science</p>
           </div>
           </a>
           <a href='https://www.youtube.com/c/BroCodez'>
           <div className='xs:mt-5'>
-              <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
               <img className="rounded-full" src="/free.jpeg"/>
               </div>
-              <h3 class="mb-2 text-xl font-bold dark:text-white">Free code camp</h3>
-              <p class="text-gray-500 dark:text-gray-400">The best channel right now for computer science. Topics range from begineer tutorials to advanced machine learning!</p>
+              <h3 className="mb-2 text-xl font-bold dark:text-white">Free code camp</h3>
+              <p className="text-gray-500 dark:text-gray-400">The best channel right now for computer science. Topics range from begineer tutorials to advanced machine learning!</p>
           </div>
           </a>
           <a href='https://www.youtube.com/c/nesoacademy'>
           <div >
-              <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
               <img className="rounded-full" src="/neso.jpg"/>
               </div>
-              <h3 class="mb-2 text-xl font-bold dark:text-white">Neso Academy</h3>
-              <p class="text-gray-500 dark:text-gray-400">In depth tutorials on advanced subjects. Topics on Neso Academy are particularly good for computer science student.</p>
+              <h3 className="mb-2 text-xl font-bold dark:text-white">Neso Academy</h3>
+              <p className="text-gray-500 dark:text-gray-400">In depth tutorials on advanced subjects. Topics on Neso Academy are particularly good for computer science student.</p>
           </div>
           </a>
       </div>
