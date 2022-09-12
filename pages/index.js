@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 export default function Home() {
     const [navbar, setNavbar] = useState(false);
+    const [email, setEmail] = useState('');
+
 
   return (
     
@@ -12,8 +14,13 @@ export default function Home() {
        <Head>
         <title>Tutorial Heaven</title>
         <link rel="icon" href="/fav.png" />
-      </Head>
+        
+        <script async src="/scripts/ml.js"></script>
+        <script async src="/scripts/click.js"></script>
 
+      </Head>
+   
+  
       <nav className="w-full bg-gray-800 shadow">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
@@ -23,6 +30,7 @@ export default function Home() {
                 <h2 className="text-2xl text-white font-bold">Tutorial Heaven</h2>
               </a>
               </Link>
+        
               <div className="md:hidden">
                 <button
                   className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -89,25 +97,68 @@ export default function Home() {
           </div>
         </div>
       </nav>
+
+
+
+
+
+
+
+
+
+
+
 <section id='news' className="bg-white dark:bg-gray-900">
   <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div className="mx-auto max-w-screen-md sm:text-center">
           <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white animate-pulse">Sign up for our newsletter</h2>
           <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.</p>
-          <form action="#">
-              <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
-                  <div className="relative w-full">
-                      <label htmlFor="email" className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
-                      <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                          <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                      </div>
-                      {/* <iframe src="https://alisiddique10.substack.com/embed"   frameborder="0" scrolling="no"></iframe> */}
+          <div className="ml-form-embed"
+          data-account="3736937:h9l7j8g0x8"
+          data-form="5763401:v7d5h7">
+        </div>
+
+  <Image className='hidden' src="https://track.mailerlite.com/webforms/o/5763401/v7d5h7?v1663011768" width={1} height={1} alt="." border="0"/>
+<div  id="mlb2-5763401" className="hidden ml-form-embedContainer ml-subscribe-form ml-subscribe-form-5763401">
+  <div className="ml-form-align-center">
+    <div className="ml-form-embedWrapper embedForm">
+      <div className="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
+        <div className="ml-form-embedContent mb-0"></div>
+        <form className="ml-block-form" action="https://static.mailerlite.com/webforms/submit/v7d5h7" data-code="v7d5h7" method="post" target="_blank">
+          <div className="ml-form-formContent horozintalForm">
+            <div className="ml-form-horizontalRow">
+              <div className="ml-input-horizontal">
+                <div className='w-100 horizontal-fields'>
+                  <div className="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                    <input type="email" className="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autoComplete="email"/>
                   </div>
-              
+                </div>
               </div>
-              <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We care about the protection of your data. <a href="#" className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read our Privacy Policy</a>.</div>
-          </form>
+              <div className="ml-button-horizontal primary">
+                <button type="submit" className="primary">Get Free Access</button>
+                <button disabled="disabled"  type="button" className="loading hidden"> <div className="ml-form-embedSubmitLoad"></div> <span className="sr-only">Loading...</span> </button>
+              </div>
+            </div>
+          </div>
+          <input type="hidden" name="ml-submit" value="1"/>
+          <div className="ml-mobileButton-horizontal">
+            <button type="submit" className="primary">Get Free Access</button>
+            <button disabled="disabled" type="button" className="loading hidden"> <div className="ml-form-embedSubmitLoad"></div> <span className="sr-only">Loading...</span> </button>
+          </div>
+          <input type="hidden" name="anticsrf" value="true"/>
+        </form>
+      </div>
+      <div className="ml-form-successBody row-success hidden">
+        <div className="ml-form-successContent">
+          <h4>Thank you!</h4>
+          <p>You have successfully joined our subscriber list.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
           <Image    alt="table"  className='flex justify-center mx-auto w-50 h-50 rounded-md' width={700} height={300} src="/table.png"/>
+
 
       </div>
   </div>
@@ -181,14 +232,14 @@ export default function Home() {
             </a>
             </Link>
         </div>
-        <Image height={60} width={60}  alt="u" className="h-60 w-70" src="/u.jpeg"/>
+        <Image height={400} width={600}  alt="u" className="h-60 w-70" src="/u.jpeg"/>
 
     </div>
     </section>
 
     <section className="bg-white dark:bg-gray-900">
     <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-    <Image height={60} width={60} alt='code' className="h-60 w-70" src="/code.jpg"/>
+    <Image height={400} width={600} alt='code' className="h-60 w-70" src="/code.jpg"/>
         <div className="mt-4 md:mt-0">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Let's get started!.</h2>
             <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Join our newsltter for more tutorials every week!.</p>
