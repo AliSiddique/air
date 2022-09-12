@@ -113,16 +113,16 @@ export default function Home() {
       <div className="mx-auto max-w-screen-md sm:text-center">
           <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white animate-pulse">Sign up for our newsletter</h2>
           <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.</p>
-          <div className="ml-form-embed"
+          <div className="ml-form-embed mb-10"
           data-account="3736937:h9l7j8g0x8"
           data-form="5763401:v7d5h7">
         </div>
 
-  <Image className='hidden' src="https://track.mailerlite.com/webforms/o/5763401/v7d5h7?v1663011768" width={1} height={1} alt="." border="0"/>
+  {/* <Image className='hidden' src="https://track.mailerlite.com/webforms/o/5763401/v7d5h7?v1663011768" width={1} height={1} alt="." border="0"/> */}
 <div  id="mlb2-5763401" className="hidden ml-form-embedContainer ml-subscribe-form ml-subscribe-form-5763401">
-  <div className="ml-form-align-center">
-    <div className="ml-form-embedWrapper embedForm">
-      <div className="ml-form-embedBody ml-form-embedBodyHorizontal row-form">
+  <div className="hidden ml-form-align-center">
+    <div className="hidden ml-form-embedWrapper embedForm">
+      <div className="hidden ml-form-embedBody ml-form-embedBodyHorizontal row-form">
         <div className="ml-form-embedContent mb-0"></div>
         <form className="ml-block-form" action="https://static.mailerlite.com/webforms/submit/v7d5h7" data-code="v7d5h7" method="post" target="_blank">
           <div className="ml-form-formContent horozintalForm">
@@ -157,7 +157,7 @@ export default function Home() {
     </div>
   </div>
 </div>
-          <Image    alt="table"  className='flex justify-center mx-auto w-50 h-50 rounded-md' width={700} height={300} src="/table.png"/>
+          <Image  alt="table"  className='flex mt-20 justify-center mx-auto w-50 h-50 rounded-md' width={700} height={300} src="/table.png"/>
 
 
       </div>
